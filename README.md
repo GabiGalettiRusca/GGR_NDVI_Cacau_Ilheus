@@ -5,6 +5,9 @@ Este repositório contém os códigos e dados utilizados para a análise da esta
 🛰️ Código 1 – Análise Interanual do NDVI em Cacau Sombreado (2019–2023)
 Arquivo: NDVI_Ilheus_Cacau.ipynb
 
+Link com arquivos necessários (pasta "/content/drive/MyDrive/Ilheus_GGR/Base/" no drive):
+https://drive.google.com/drive/folders/1IU5frHUwgshvE40mnGbvwL55uZQnGTmU?usp=sharing
+
 🎯 Objetivo
 Avaliar a estabilidade interanual do índice NDVI em áreas classificadas como cacau sombreado no município de Ilhéus, como forma de inferir sobre a resiliência ecológica desses sistemas agroflorestais ao longo de cinco anos.
 
