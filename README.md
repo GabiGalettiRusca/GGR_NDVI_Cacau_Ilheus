@@ -51,3 +51,45 @@ Pettorelli et al. (2005). Using NDVI to assess ecological responses. Trends in E
 MapBiomas Cacau (2020, 2023). Relatórios técnicos e mapeamento da cacauicultura sombreada.
 
 Smith & Boers (2023); Ma et al. (2023); Yengoh et al. (2015).
+
+----------------------------------------------------------------------------
+GEE - Código Javascript para exportar as áreas de Cacau em geojson
+---------------------------------------------------------------------------
+// 1. Importar Ilhéus
+var ilheus = ee.FeatureCollection("projects/ee-ggalettirusca/assets/Ilheus_GGR");
+
+// 2. Importar imagem do MapBiomas Cacau
+var mapbiomas_cacau = ee.Image("projects/mapbiomas-public/assets/brazil/lulc/collection7_1/mapbiomas_cacau_2019_v1");
+
+// 3. Filtrar apenas a classe 2 (Cacau Sombreado, conforme seu dado local)
+var cacau_mask = mapbiomas_cacau.eq(2);
+var cacau_ilheus = mapbiomas_cacau.updateMask(cacau_mask).clip(ilheus);
+
+// 4. Converter imagem filtrada em vetor
+var cacau_vector = cacau_ilheus.reduceToVectors({
+  geometry: ilheus.geometry(),
+  geometryType: 'polygon',
+  scale: 30,
+  maxPixels: 1e13
+});
+
+Mascara Cacau
+
+// 1. Importar Ilhéus
+var ilheus = ee.FeatureCollection("projects/ee-ggalettirusca/assets/Ilheus_GGR");
+
+// 2. Importar imagem do MapBiomas Cacau
+var mapbiomas_cacau = ee.Image("projects/mapbiomas-public/assets/brazil/lulc/collection7_1/mapbiomas_cacau_2019_v1");
+
+// 3. Filtrar apenas a classe 2 (Cacau Sombreado, conforme seu dado local)
+var cacau_mask = mapbiomas_cacau.eq(2);
+var cacau_ilheus = mapbiomas_cacau.updateMask(cacau_mask).clip(ilheus);
+
+// 4. Converter imagem filtrada em vetor
+var cacau_vector = cacau_ilheus.reduceToVectors({
+  geometry: ilheus.geometry(),
+  geometryType: 'polygon',
+  scale: 30,
+  maxPixels: 1e13
+});
+
