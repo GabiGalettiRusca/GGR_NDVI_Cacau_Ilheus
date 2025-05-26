@@ -1,4 +1,5 @@
 🌿 NDVI_Cacau_Ilheus
+
 Este repositório contém os códigos e dados utilizados para a análise da estabilidade interanual do NDVI em áreas de cultivo sombreado de cacau no município de Ilhéus (BA), no período de 2019 a 2023. A investigação busca compreender aspectos da resiliência ecológica dessas áreas frente a distúrbios ambientais e climáticos.
 
 🛰️ Código 1 – Análise Interanual do NDVI em Cacau Sombreado (2019–2023)
