@@ -37,7 +37,7 @@ Gráfico de linha representando a estabilidade interanual da vegetação;
 Mapas comparativos e individuais do NDVI anual com sobreposição das áreas de cacau sombreado.
 
 🌎 Mapas e Visualizações
-Mapas anuais do NDVI (2019, 2020, 2021, 2023) com contorno sutil das áreas de cacau sombreado;
+Mapas anuais do NDVI (2019, 2020, 2021, 2023) com contorno das áreas de cacau sombreado;
 
 Mapa comparativo (subplot) com os 4 anos lado a lado, destacando padrões espaciais;
 
